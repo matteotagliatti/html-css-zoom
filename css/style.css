@@ -15,6 +15,12 @@ body {
   background-color: black;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -22,6 +28,10 @@ a {
 
 i {
   color: white;
+}
+
+#navbar i {
+  font-size: 1.5rem;
 }
 
 /* Classes */
@@ -40,15 +50,14 @@ i {
 }
 
 .container {
-  margin: 4rem;
+  margin: 3rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
 
-.flex {
-  display: flex;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .screen {
@@ -66,12 +75,23 @@ i {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* ID */
 
 #view {
-  position: absolute;
-  top: 15px;
-  right: 10px;
+  margin: 1rem 1rem 0 0;
+  justify-content: flex-end;
 }
 
 #screens {
@@ -79,6 +99,5 @@ i {
 }
 
 #navbar {
-  height: 10vh;
   justify-content: space-between;
 }
