@@ -30,8 +30,8 @@ i {
   color: white;
 }
 
-#navbar i {
-  font-size: 1.5rem;
+i.big {
+  font-size: 1.7rem;
 }
 
 /* Classes */
@@ -83,8 +83,45 @@ i {
   flex-direction: column;
 }
 
+.nav-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-element {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .text-center {
   text-align: center;
+}
+
+.end-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4a4a;
+}
+
+.end {
+  color: red;
+}
+
+.green {
+  color: #4bc800;
 }
 
 /* ID */
@@ -100,4 +137,5 @@ i {
 
 #navbar {
   justify-content: space-between;
+  margin-left: 2rem;
 }
