@@ -26,6 +26,8 @@ a {
   text-decoration: none;
 }
 
+/* Global - i */
+
 i {
   color: white;
 }
@@ -34,30 +36,15 @@ i.big {
   font-size: 1.7rem;
 }
 
+i.green {
+  color: #4bc800;
+}
+
 /* Classes */
 
-.absolute {
-}
-
-.btn {
-  padding: 0.3rem;
-  border-radius: 5px;
-  background-color: #4a4a4a;
-}
-
-.mr-5 {
-  margin-right: 0.5rem;
-}
-
-.container {
-  margin: 3rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
-  height: 80vh;
-  overflow-y: scroll;
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 .screen {
@@ -75,14 +62,6 @@ i.big {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
 .nav-section {
   display: flex;
   justify-content: center;
@@ -97,45 +76,53 @@ i.big {
   gap: 5px;
 }
 
-.justify-center {
-  justify-content: center;
-}
+/* Classes Buttons */
 
-.align-center {
-  align-items: center;
-}
-
-.text-center {
-  text-align: center;
+.btn {
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: #4a4a4a;
 }
 
 .end-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
   background-color: #4a4a4a;
 }
 
-.end {
+.end-container a {
   color: red;
-}
-
-.green {
-  color: #4bc800;
 }
 
 /* ID */
 
 #view {
+  display: flex;
   margin: 1rem 1rem 0 0;
   justify-content: flex-end;
 }
 
+#view a:first-child {
+  margin-right: 0.5rem;
+}
+
 #screens {
-  height: 90vh;
+  margin: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  height: 75vh;
+  overflow-y: scroll;
 }
 
 #navbar {
+  display: flex;
   justify-content: space-between;
   margin-left: 2rem;
+  background-color: rosybrown;
 }
