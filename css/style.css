@@ -15,12 +15,6 @@ body {
   background-color: black;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -32,6 +26,10 @@ i {
   color: white;
 }
 
+i.small {
+  font-size: 0.6rem;
+}
+
 i.big {
   font-size: 1.7rem;
 }
@@ -41,11 +39,6 @@ i.green {
 }
 
 /* Classes */
-
-main {
-  display: flex;
-  flex-direction: column;
-}
 
 .screen {
   height: 150px;
@@ -63,17 +56,18 @@ main {
 }
 
 .nav-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
 }
 
 .nav-element {
-  display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 5px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Classes Buttons */
@@ -85,9 +79,6 @@ main {
 }
 
 .end-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2rem 1rem;
   background-color: #4a4a4a;
 }
@@ -99,8 +90,8 @@ main {
 /* ID */
 
 #view {
-  display: flex;
   margin: 1rem 1rem 0 0;
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -109,20 +100,16 @@ main {
 }
 
 #screens {
-  margin: 3rem;
-  display: flex;
+  margin: 3rem 1rem;
+  height: 77vh;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 1rem;
-
-  height: 75vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   margin-left: 2rem;
-  background-color: rosybrown;
+  min-width: 960px;
 }
