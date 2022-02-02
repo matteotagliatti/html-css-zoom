@@ -41,7 +41,6 @@ i {
 
 .container {
   margin: 4rem;
-
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -55,7 +54,16 @@ i {
 .screen {
   height: 150px;
   width: 220px;
+  position: relative;
   background-image: url("https://picsum.photos/seed/picsum/300/200");
+}
+
+.screen div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* ID */
