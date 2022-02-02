@@ -15,6 +15,11 @@ body {
   background-color: black;
 }
 
+main {
+  height: 100vh;
+  justify-content: space-between;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -41,7 +46,7 @@ i.green {
 /* Classes */
 
 .screen {
-  height: 150px;
+  height: 130px;
   width: 220px;
   position: relative;
   background-image: url("https://picsum.photos/seed/picsum/300/200");
@@ -60,7 +65,6 @@ i.green {
 }
 
 .nav-element {
-  flex-direction: column;
   gap: 5px;
 }
 
@@ -68,6 +72,10 @@ i.green {
 
 .flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-center {
@@ -105,7 +113,11 @@ i.green {
 
 #screens {
   margin: 3rem 1rem;
-  height: 77vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1650px;
   flex-wrap: wrap;
   gap: 1rem;
   overflow-y: auto;
