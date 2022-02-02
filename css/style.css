@@ -116,6 +116,7 @@ i.green {
 }
 
 .container {
+  height: 70vh;
   margin: 0 auto;
   max-width: 1650px;
   flex-wrap: wrap;
