@@ -48,10 +48,10 @@ i.green {
 }
 
 .screen div {
+  padding: 0.3rem;
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 0.3rem;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -64,8 +64,13 @@ i.green {
   gap: 5px;
 }
 
-.flex-center {
+/* Classes Flex */
+
+.flex {
   display: flex;
+}
+
+.flex-center {
   justify-content: center;
   align-items: center;
 }
@@ -80,7 +85,7 @@ i.green {
 
 .end-container {
   padding: 2rem 1rem;
-  background-color: #4a4a4a;
+  border-radius: unset;
 }
 
 .end-container a {
@@ -91,7 +96,6 @@ i.green {
 
 #view {
   margin: 1rem 1rem 0 0;
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -108,7 +112,6 @@ i.green {
 }
 
 #navbar {
-  display: flex;
   justify-content: space-between;
   margin-left: 2rem;
   min-width: 960px;
