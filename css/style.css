@@ -1,0 +1,76 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global */
+
+body {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: white;
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+i {
+  color: white;
+}
+
+/* Classes */
+
+.absolute {
+}
+
+.btn {
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+}
+
+.mr-5 {
+  margin-right: 0.5rem;
+}
+
+.container {
+  margin: 4rem;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.screen {
+  height: 150px;
+  width: 220px;
+  background-image: url("https://picsum.photos/seed/picsum/300/200");
+}
+
+/* ID */
+
+#view {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+#screens {
+  height: 90vh;
+}
+
+#navbar {
+  height: 10vh;
+  justify-content: space-between;
+}
