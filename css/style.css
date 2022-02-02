@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+#view a:first-child {
+  margin-right: 0.5rem;
+}
+
 /* Global - i */
 
 i {
@@ -44,6 +48,15 @@ i.green {
 }
 
 /* Classes */
+
+.container {
+  height: 70vh;
+  margin: 0 auto;
+  max-width: 1650px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: auto;
+}
 
 .screen {
   height: 130px;
@@ -107,21 +120,8 @@ i.green {
   justify-content: flex-end;
 }
 
-#view a:first-child {
-  margin-right: 0.5rem;
-}
-
 #screens {
   margin: 3rem 1rem;
-}
-
-.container {
-  height: 70vh;
-  margin: 0 auto;
-  max-width: 1650px;
-  flex-wrap: wrap;
-  gap: 1rem;
-  overflow-y: auto;
 }
 
 #navbar {
