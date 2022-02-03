@@ -15,9 +15,27 @@ body {
   background-color: black;
 }
 
+header {
+  height: 5vh;
+  margin-right: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 main {
-  height: 100vh;
+  height: 85vh;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  overflow: auto;
+}
+
+footer {
+  height: 10vh;
+  padding-left: 2rem;
   justify-content: space-between;
+  flex-shrink: 0;
+  text-align: center;
+  background-color: #222222;
 }
 
 a {
@@ -25,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-#view a:first-child {
+header a:first-child {
   margin-right: 0.5rem;
 }
 
@@ -48,15 +66,6 @@ i.green {
 }
 
 /* Classes */
-
-.container {
-  height: 75vh;
-  margin: 0 auto;
-  max-width: 1650px;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  overflow-y: auto;
-}
 
 .screen {
   height: 130px;
@@ -111,24 +120,4 @@ i.green {
 
 .end-container a {
   color: red;
-}
-
-/* ID */
-
-#view {
-  height: 5vh;
-  justify-content: flex-end;
-  margin-right: 0.5rem;
-}
-
-#screens {
-  height: 85vh;
-}
-
-#navbar {
-  height: 10vh;
-  justify-content: space-between;
-  padding-left: 2rem;
-  min-width: 960px;
-  background-color: #222222;
 }
